@@ -1,0 +1,122 @@
+[
+  {
+    "abbreviation": "atl",
+    "full": "ATLANTA HAWKS"
+  },
+  {
+    "abbreviation": "bkn",
+    "full": "BROOKLYN NETS"
+  },
+  {
+    "abbreviation": "bos",
+    "full": "BOSTON CELTICS"
+  },
+  {
+    "abbreviation": "cha",
+    "full": "CHARLOTTE HORNETS"
+  },
+  {
+    "abbreviation": "chi",
+    "full": "CHICAGO BULLS"
+  },
+  {
+    "abbreviation": "cle",
+    "full": "CLEVELAND CAVALIERS"
+  },
+  {
+    "abbreviation": "dal",
+    "full": "DALLAS MAVERICKS"
+  },
+  {
+    "abbreviation": "den",
+    "full": "DENVER NUGGETS"
+  },
+  {
+    "abbreviation": "det",
+    "full": "DETROIT PISTONS"
+  },
+  {
+    "abbreviation": "gsw",
+    "full": "GOLDEN STATE WARRIORS"
+  },
+  {
+    "abbreviation": "hou",
+    "full": "HOUSTON ROCKETS"
+  },
+  {
+    "abbreviation": "ind",
+    "full": "INDIANA PACERS"
+  },
+  {
+    "abbreviation": "lac",
+    "full": "LOS ANGELES CLIPPERS"
+  },
+  {
+    "abbreviation": "lal",
+    "full": "LOS ANGELES LAKERS"
+  },
+  {
+    "abbreviation": "mem",
+    "full": "MEMPHIS GRIZZLIES"
+  },
+  {
+    "abbreviation": "mia",
+    "full": "MIAMI HEAT"
+  },
+  {
+    "abbreviation": "mil",
+    "full": "MILWAUKEE BUCKS"
+  },
+  {
+    "abbreviation": "min",
+    "full": "MINNESOTA TIMBERWOLVES"
+  },
+  {
+    "abbreviation": "nop",
+    "full": "NEW ORLEANS PELICANS"
+  },
+  {
+    "abbreviation": "nyk",
+    "full": "NEW YORK KNICKS"
+  },
+  {
+    "abbreviation": "okc",
+    "full": "OKLAHOMA CITY THUNDER"
+  },
+  {
+    "abbreviation": "orl",
+    "full": "ORLANDO MAGIC"
+  },
+  {
+    "abbreviation": "phi",
+    "full": "PHILADELPHIA 76ERS"
+  },
+  {
+    "abbreviation": "phx",
+    "full": "PHOENIX SUNS"
+  },
+  {
+    "abbreviation": "por",
+    "full": "PORTLAND TRAIL BLAZERS"
+  },
+  {
+    "abbreviation": "sac",
+    "full": "SACRAMENTO KINGS"
+  },
+  {
+    "abbreviation": "sas",
+    "full": "SAN ANTONIO SPURS"
+  },
+  {
+    "abbreviation": "tor",
+    "full": "TORONTO RAPTORS"
+  },
+  {
+    "abbreviation": "uta",
+    "full": "UTAH JAZZ"
+  },
+  {
+    "abbreviation": "was",
+    "full": "WASHINGTON WIZARDS"
+  }
+]
