@@ -232,3 +232,34 @@ public class SpringDependencyAnalyzerController {
         });
     }
 }
+//    call apoc.load.json($url) yield value
+//        merge (p:Player {name:value.name}) on create set
+//        p.blocks = value.blocks,
+//        p.personal_fouls = value.personal_fouls,
+//        p.attempted_field_goals = value.attempted_field_goals,
+//        p.games_played = value.games_played,
+//        p.steals = value.steals,
+//        p.team = value.team,
+//        p.made_free_throws = value.made_free_throws,
+//        p.made_three_point_field_goals = value.made_three_point_field_goals,
+//        p.assists = value.assists,
+//        p.made_field_goals = value.made_field_goals,
+//        p.minutes_played = value.minutes_played,
+//        p.turnovers = value.turnovers,
+//        p.attempted_free_throws = value.attempted_free_throws,
+//        p.games_started = value.games_started,
+//        p.position = value.position,
+//        p.defensive_rebounds = value.defensive_rebounds,
+//        p.offensive_rebounds = value.offensive_rebounds,
+//        p.age = value.age,
+//        p.attempted_three_point_field_goals = value.attempted_three_point_field_goals
+//        merge (t:Team {name:value.team})
+//        merge (p)-[:PLAYED]->(t)
+//
+////ale to jeszcze jest zle
+//        call apoc.load.json($url) yield value as bean
+//        merge (b:Bean {name:bean.name}) on create
+//        set b.package = bean.name
+//        foreach (dep IN bean.dependencies | merge (db:Bean {name:dep}) on create set db.package = dep)
+//        merge (b)-[d:DEPENDSON]->(db)
+//        return b,d
