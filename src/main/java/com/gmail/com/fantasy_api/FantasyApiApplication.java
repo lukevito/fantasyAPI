@@ -1,5 +1,6 @@
 package com.gmail.com.fantasy_api;
 
+import com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
@@ -56,5 +57,15 @@ public class FantasyApiApplication {
     @Bean
     MessageListenerAdapter listenerAdapter(Receiver receiver) {
         return new MessageListenerAdapter(receiver, "receiveMessage");
+    }
+
+
+    @Bean
+    public static AutoJsonRpcServiceImplExporter autoJsonRpcServiceImplExporter() {
+        AutoJsonRpcServiceImplExporter exp = new AutoJsonRpcServiceImplExporter();
+        //in here you can provide custom HTTP status code providers etc. eg:
+        //exp.setHttpStatusCodeProvider();
+        //exp.setErrorResolver();
+        return exp;
     }
 }
