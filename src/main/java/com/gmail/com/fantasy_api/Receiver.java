@@ -13,7 +13,7 @@ public class Receiver {
 //    private CircularDependencyLazyB beanA;
 
     private void receiveMessage(String message) {
-        //System.out.println("Message received:" + message);
+        System.out.println("Message received:" + message);
         latch.countDown();
     }
 

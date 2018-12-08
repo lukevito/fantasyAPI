@@ -13,6 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
+
+//netstat -ao |find /i "listening"
 @SpringBootApplication
 @Import(Registrar.class)
 public class FantasyApiApplication {
