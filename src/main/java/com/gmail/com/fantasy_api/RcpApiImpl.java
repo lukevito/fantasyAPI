@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.gmail.com.fantasy_api.ApplicationBeansController.getApplicationBeans;
+
 @Service
 @AutoJsonRpcServiceImpl
 public class RcpApiImpl implements RcpApi {
@@ -34,13 +36,7 @@ public class RcpApiImpl implements RcpApi {
     //curl -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"bean.springa\",\"params\":[],\"id\":1}" http://localhost:8080/api/jsonrcp
     @Override
     public ApplicationBeansUtill.ApplicationBeans allBeans() {
-        Map<String, ApplicationBeansUtill.ContextBeans> contexts = new HashMap<>();
-        ConfigurableApplicationContext context = this.context;
-        while (context != null) {
-            contexts.put(context.getId(), ApplicationBeansUtill.ContextBeans.describing(context));
-            context = ApplicationBeansUtill.getConfigurableParent(context);
-        }
-        return new ApplicationBeansUtill.ApplicationBeans(contexts);
+        return getApplicationBeans(this.context);
     }
 
 }

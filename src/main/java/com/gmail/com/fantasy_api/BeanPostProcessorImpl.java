@@ -9,15 +9,15 @@ import org.springframework.stereotype.Component;
 public class BeanPostProcessorImpl implements BeanPostProcessor {
 
     private final RabbitTemplate rabbitTemplate;
-    private final Receiver receiver;
+//    private final Receiver receiver;
 
     private int i = 0;
     int currentDepth = 0;
     String sameInstanceBean;
 
-    public BeanPostProcessorImpl(RabbitTemplate rabbitTemplate, Receiver receiver) {
+    public BeanPostProcessorImpl(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
-        this.receiver = receiver;
+//        this.receiver = receiver;
     }
 
     @Override

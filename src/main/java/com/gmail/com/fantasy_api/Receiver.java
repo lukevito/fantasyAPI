@@ -9,9 +9,6 @@ import java.util.concurrent.CountDownLatch;
 public class Receiver {
     CountDownLatch latch = new CountDownLatch(1);
 
-
-//    private CircularDependencyLazyB beanA;
-
     private void receiveMessage(String message) {
         System.out.println("Message received:" + message);
         latch.countDown();

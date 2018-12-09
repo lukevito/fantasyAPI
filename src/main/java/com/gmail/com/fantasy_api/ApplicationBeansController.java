@@ -32,8 +32,12 @@ public class ApplicationBeansController {
 
     @GetMapping(value = "/all-beans", produces= MediaType.APPLICATION_JSON_VALUE)
     public ApplicationBeansUtill.ApplicationBeans beans() {
+        return getApplicationBeans(this.context);
+    }
+
+    static ApplicationBeansUtill.ApplicationBeans getApplicationBeans(ConfigurableApplicationContext context2) {
         Map<String, ApplicationBeansUtill.ContextBeans> contexts = new HashMap<>();
-        ConfigurableApplicationContext context = this.context;
+        ConfigurableApplicationContext context = context2;
         while (context != null) {
             contexts.put(context.getId(), ApplicationBeansUtill.ContextBeans.describing(context));
             context = ApplicationBeansUtill.getConfigurableParent(context);
