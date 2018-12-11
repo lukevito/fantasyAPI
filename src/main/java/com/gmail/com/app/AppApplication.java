@@ -18,8 +18,17 @@ import org.springframework.context.annotation.Import;
 public class AppApplication {
 
     /**
-     *                   potrzebny jest rabbit i neo4j na defaultowych ustawienieach
+     *                   potrzebny jest neo4j na defaultowych ustawienieach
      *                         + application.properties dla neo4j
+     *                          https://neo4j.com/download/
+     *
+     *                   potrzebny jest rabbit z
+     *                          https://www.rabbitmq.com
+     *
+     *                          Dla applikacji webowej rowniez
+     *                              plugin "web stomp"
+     *                              https://www.rabbitmq.com/web-stomp.html
+     *
      */
     public static void main(String[] args) {
         SpringApplication.run(AppApplication.class, args);
