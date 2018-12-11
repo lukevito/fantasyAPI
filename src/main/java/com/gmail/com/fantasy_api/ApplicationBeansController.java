@@ -45,11 +45,5 @@ public class ApplicationBeansController {
         return new ApplicationBeansUtill.ApplicationBeans(contexts);
     }
 
-//    call apoc.load.json($url) yield value
-//    unwind value.contexts.application.beans as beans
-//    with keys(beans) as beanNames, beans
-//    foreach (beanName in beanNames |
-//            merge (b:Bean {name:beanName}) on match set b.scope = beans[beanName].scope
-//)
-//        return count(*);
+
 }

@@ -98,20 +98,28 @@ public class ApplicationBeansUtill {
 
     }
 
+
+//    call apoc.load.json($url) yield value
+//    unwind value.contexts.application.beans as beans
+//    with keys(beans) as beanNames, beans
+//    foreach (beanName in beanNames |
+//              merge (b:Bean {name:beanName}) on match set b.scope = beans[beanName].scope,
+//                                                          b.type = beans[beanName].type,
+//                                                          b.resource = beans[beanName].resource
+//              with  beans[beanName].dependencies
+//            )
+//    return count(*);
+
     /**
      * A description of a bean in an application context, primarily intended for
      * serialization to JSON.
      */
     public static final class BeanDescriptor {
 
-        private final String[] aliases;
-
         private final String scope;
-
         private final Class<?> type;
-
         private final String resource;
-
+        private final String[] aliases;
         private final String[] dependencies;
 
         private BeanDescriptor(String[] aliases, String scope, Class<?> type,
